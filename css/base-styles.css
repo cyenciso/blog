@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+/* 
+Colors:
+- white: #fff9f4
+- darker white: #D9D5D1
+- black: #303030
+- red: #d16014
+- yellow: #d1ac00
+- green: #7c9885
+- blue: #7699d4
+- purple: #967aa1
+*/
+html {
+    height: 100%;
+}
+body {
+    background-color: #D9D5D1;
+    height: 100%;
+}
+
+nav {
+    background-color:#fff9f4;
+}
