@@ -1,10 +1,60 @@
-@media only screen and (min-width: 601px) {
+@media only screen and (min-width: 801px) {
     /* nav is a thin section on top */
-    nav {
-        min-height: 3em;
-    }
+        nav {
+            min-height: 3em;
+        }
 
     /* main is a carousel */
+        main {
+            /* defining the grid */
+            display: grid;
+            grid-template-rows: [row1-start] 15%
+                                [row2-start] 70%
+                                [row3-start] 15% [row3-end];
+            grid-template-areas: 
+            "."
+            "flex-container"
+            "."
+            ;
+
+            height: 85vh;
+            align-items: center;
+        }
+        
+        /* defining the flex container for the row with the carousel */
+        #flex-container {
+            grid-area: flex-container;
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-items: center;
+            height: 90%;
+        }
+
+        #flex-container section {
+            margin: 1%;
+        }
+
+        /* carousel's main section */
+        #flex-container section:nth-child(1) {
+            width: 20%;
+            height: 45%;
+            background-color:white;
+        }
+
+        /* carousel's left side section */
+        #flex-container section:nth-child(2) {
+            width: 50%;
+            height: 100%;
+            background-color: white;
+        }
+
+        /* carousel's left side section */
+        #flex-container section:nth-child(3) {
+            width: 20%;
+            height: 45%;
+            background-color:white;
+        }
 
     /* footer is a thin section at the bottom */
 }
