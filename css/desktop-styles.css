@@ -37,23 +37,33 @@
 
         /* carousel's main section */
         #flex-container section:nth-child(1) {
-            width: 20%;
-            height: 45%;
+            width: 200px;
+            height: 250px;
             background-color:white;
+            border-bottom: 5px solid #d1ac00;
         }
 
         /* carousel's left side section */
         #flex-container section:nth-child(2) {
-            width: 50%;
-            height: 100%;
+            width: 400px;
+            height: 500px;
             background-color: white;
+            border-bottom: 10px solid #d16014;
         }
 
         /* carousel's left side section */
         #flex-container section:nth-child(3) {
-            width: 20%;
-            height: 45%;
+            width: 200px;
+            height: 250px;
             background-color:white;
+            border-bottom: 5px solid #d1ac00;
+        }
+
+        /*  */
+        #flex-container section div:first-child {
+            width: 100%;
+            height: 65%;
+            background-color: aqua;
         }
 
     /* footer is a thin section at the bottom */
