@@ -26,13 +26,31 @@
             grid-area: flex-container;
             display: flex;
             flex-wrap: nowrap;
-            justify-content: center;
+            justify-content: space-evenly;
             align-items: center;
             height: 90%;
         }
 
+
+        /* all card styles */
         #flex-container section {
-            margin: 1%;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            box-shadow: rgb(175, 175, 175) 0 3px 15px 5px;
+            text-align: center;
+        }
+
+        #flex-container section div{
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #flex-container section div p {
+            margin: 2% 5%;
         }
 
         /* carousel's main section */
@@ -59,12 +77,13 @@
             border-bottom: 5px solid #d1ac00;
         }
 
-        /*  */
-        #flex-container section div:first-child {
-            width: 100%;
-            height: 65%;
-            background-color: aqua;
-        }
-
     /* footer is a thin section at the bottom */
+    footer {
+        display: flex;
+        flex-direction: row;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        justify-content: flex-end;
+    }
 }

@@ -2,13 +2,14 @@
     margin: 0;
     border: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 /* 
 Colors:
 - white: white
 - darker white: #D9D5D1
-- black: #303030
+- black: #474747
 - red: #d16014
 - yellow: #d1ac00
 - green: #7c9885
@@ -25,4 +26,12 @@ body {
 
 nav {
     background-color:white;
+}
+
+h2 {
+    font-family: 'Balsamiq Sans', cursive;
+    color: #474747;
+}
+p {
+    font-family: 'Montserrat', sans-serif;
 }
